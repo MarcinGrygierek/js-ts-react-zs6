@@ -1,0 +1,8 @@
+.icon-plus {
+    width: 100px;
+    height: 100px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
