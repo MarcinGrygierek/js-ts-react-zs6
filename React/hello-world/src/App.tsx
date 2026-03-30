@@ -2,6 +2,10 @@ import { ComponentComposition } from "./components/ComponentComposition/Componen
 import { ComponentReturns } from "./components/ComponentReturns";
 import { Composition } from "./components/Composition";
 import { CompositionHeader } from "./components/CompositionHeader";
+import { AndTest } from "./components/ConditionalRendering/AndTest";
+import { ConditionalRenderingIf } from "./components/ConditionalRendering/ConditionalRenderingIf";
+import { ConditionalRenderingTernary } from "./components/ConditionalRendering/ConditionalRenderingTernary";
+import { DefaultName } from "./components/ConditionalRendering/DefaultName";
 import { DynamicStylesComponent } from "./components/DynamicStylesComponent/DynamicStylesComponent";
 import { Ex1Attributes } from "./components/exercises/attributes/Ex1Attributes";
 import { Ex2Attributes } from "./components/exercises/attributes/Ex2Attributes";
@@ -9,16 +13,27 @@ import { Ex3Attributes } from "./components/exercises/attributes/Ex3Attributes";
 import { Ex1Components } from "./components/exercises/components/Ex1Components";
 import { Ex2Components } from "./components/exercises/components/Ex2Components";
 import { ExComposition } from "./components/exercises/composition/ExComposition";
+import { ConditionalExcercise1 } from "./components/exercises/conditional-rendering/ConditionalExcercise1";
+import { ConditionalExercise2 } from "./components/exercises/conditional-rendering/ConditionalExercise2";
+import { EffectExcercise2 } from "./components/exercises/effect/EffectExcercise1";
 import { Ex1Events } from "./components/exercises/events/Ex1Events";
 import { Ex2Events } from "./components/exercises/events/Ex2Events";
 import { Ex1Lists } from "./components/exercises/lists-and-keys/Ex1Lists";
 import { Ex2Lists } from "./components/exercises/lists-and-keys/Ex2Lists";
+import { Interval } from "./components/exercises/state/Interval";
+import { StateAndEffect } from "./components/exercises/state/StateAndEffect";
+import { StateExcercise1 } from "./components/exercises/state/StateExcercise1";
+import { StateExcercise1_V2 } from "./components/exercises/state/StateExercise1_V2";
+import { StateExcercise2 } from "./components/exercises/state/StateExercise2";
 import { ExpressionAsCont } from "./components/ExpressionAsConst";
 import { FunctionsAsPropsParent } from "./components/FunctionsAsProps/FunctionsAsPropsParent";
 import { Hello } from "./components/Hello";
 import { NestingArrayElement } from "./components/NestingArrayElements";
 import { NestingElement } from "./components/NestingElements";
 import { PropsDrilling } from "./components/PropsDrilling/PropsDrilling";
+import { Array } from "./components/State/Array";
+import { State } from "./components/State/State";
+import { StrictModeTest } from "./components/StrictModeTest/StrictModeTest";
 import { StyledComponent } from "./components/StyledComponent/StyledComponent";
 
 export const App = () => {
@@ -72,7 +87,40 @@ export const App = () => {
 
       {/* Zdarzenia - ćwiczenia       */}
       {/* <Ex1Events /> */}
-      <Ex2Events />
+      {/* <Ex2Events /> */}
+
+      {/* Stan komponentu */}
+      {/* <State />
+      <Array /> */}
+
+      {/* Stan komponentu - ćwiczenia */}
+      {/* <StateExcercise1 />
+      <StateExcercise1_V2 /> */}
+      {/* <StateExcercise2 /> */}
+
+      {/* useEffect */}
+      {/* <Interval defaultValue={0} /> */}
+      {/* <StateAndEffect /> */}
+
+      {/* useEffect - ćwiczenia */}
+      {/* <EffectExcercise2 /> */}
+
+      {/* StrictMode */}
+      {/* <StrictModeTest /> */}
+
+      {/* Warunkowe renderowanie */}
+      {/* <ConditionalRenderingIf /> */}
+      {/* <ConditionalRenderingTernary isAccess /> */}
+      {/* <DefaultName name='John' /> */}
+      {/* <AndTest show={false} /> */}
+
+      {/* Warunkowe renderowanie - ćwiczenia */}
+      {/* <ConditionalExcercise1 /> */}
+      <ConditionalExercise2 />
+      <ConditionalExercise2 user={{ name: "John" }} />
+      <ConditionalExercise2 user={{ name: "John", lastname: "Doe" }} />
+      <ConditionalExercise2 user={{ name: "John", lastname: "Doe", age: 10 }} />
+      <ConditionalExercise2 user={{ name: "John", lastname: "Doe", age: 30 }} />
     </>
   );
 };
