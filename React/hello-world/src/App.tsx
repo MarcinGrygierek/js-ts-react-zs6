@@ -1,5 +1,7 @@
 import { ComponentComposition } from "./components/ComponentComposition/ComponentComposition";
+import { ComponentForms } from "./components/ComponentForms/ComponentForms";
 import { ComponentReturns } from "./components/ComponentReturns";
+import { ComponentWithOwnHook } from "./components/ComponentWithOwnHook/ComponentWithOwnHook";
 import { Composition } from "./components/Composition";
 import { CompositionHeader } from "./components/CompositionHeader";
 import { AndTest } from "./components/ConditionalRendering/AndTest";
@@ -18,8 +20,13 @@ import { ConditionalExercise2 } from "./components/exercises/conditional-renderi
 import { EffectExcercise2 } from "./components/exercises/effect/EffectExcercise1";
 import { Ex1Events } from "./components/exercises/events/Ex1Events";
 import { Ex2Events } from "./components/exercises/events/Ex2Events";
+import { Ex1Forms } from "./components/exercises/forms/Ex1Forms/Ex1Forms";
+import { Ex2Forms } from "./components/exercises/forms/Ex2Forms/Ex2Forms";
 import { Ex1Lists } from "./components/exercises/lists-and-keys/Ex1Lists";
 import { Ex2Lists } from "./components/exercises/lists-and-keys/Ex2Lists";
+import { Ex1OwnHooks } from "./components/exercises/own-hooks/Ex1OwnHooks/Ex1OwnHooks";
+import { Ex2OwnHooks } from "./components/exercises/own-hooks/Ex2OwnHooks/Ex2OwnHooks";
+import { Ex3OwnHooks } from "./components/exercises/own-hooks/Ex3OwnHooks/Ex3OwnHooks";
 import { Interval } from "./components/exercises/state/Interval";
 import { StateAndEffect } from "./components/exercises/state/StateAndEffect";
 import { StateExcercise1 } from "./components/exercises/state/StateExcercise1";
@@ -28,9 +35,14 @@ import { StateExcercise2 } from "./components/exercises/state/StateExercise2";
 import { ExpressionAsCont } from "./components/ExpressionAsConst";
 import { FunctionsAsPropsParent } from "./components/FunctionsAsProps/FunctionsAsPropsParent";
 import { Hello } from "./components/Hello";
+import { HW1StateEffect } from "./components/homework/HW1StateEffect";
+import { HW2StateEffect } from "./components/homework/HW2StateEffect";
+import { HW3StateEffect } from "./components/homework/HW3StateEffect";
 import { NestingArrayElement } from "./components/NestingArrayElements";
 import { NestingElement } from "./components/NestingElements";
 import { PropsDrilling } from "./components/PropsDrilling/PropsDrilling";
+import { Routing } from "./components/Routing/Routing";
+import { RoutingLayout } from "./components/RoutingLayout/RoutingLayout";
 import { Array } from "./components/State/Array";
 import { State } from "./components/State/State";
 import { StrictModeTest } from "./components/StrictModeTest/StrictModeTest";
@@ -42,30 +54,23 @@ export const App = () => {
       {/* <Hello name="Marcin" lastName="Grygierek" />
       <Hello name="John" lastName="Doe" /> */}
       {/* <ExpressionAsCont /> */}
-
       {/* Stylowanie CSS
      wykorzystując import './Styles.css' mozna doprowadzic do wycieku styli - lepiej CSS Modules
      */}
       {/* <StyledComponent />
       <div className="icon-plus">Lorem ipsum</div> */}
-
       {/* Stylowanie inline */}
       {/* <DynamicStylesComponent /> */}
-
       {/* Atrybuty - ćwiczenia */}
       {/* <Ex1Attributes />
       <Ex2Attributes />
       <Ex3Attributes /> */}
-
       {/* <NestingElement /> */}
       {/* <NestingArrayElement /> */}
-
       {/* Listy i klucze - ćwiczenia */}
       {/* <Ex1Lists /> */}
       {/* <Ex2Lists /> */}
-
       {/* <ComponentReturns /> */}
-
       {/* Komponent - ćwiczenia */}
       {/* <Ex1Components /> */}
       {/* <Ex2Components /> */}
@@ -77,50 +82,57 @@ export const App = () => {
       >
         <h1>Page title</h1>
       </CompositionHeader> */}
-
       {/* <PropsDrilling /> */}
-
       {/* Kompozycja - ćwiczenie */}
       {/* <ExComposition /> */}
-
       {/* <FunctionsAsPropsParent /> */}
-
       {/* Zdarzenia - ćwiczenia       */}
       {/* <Ex1Events /> */}
       {/* <Ex2Events /> */}
-
       {/* Stan komponentu */}
       {/* <State />
       <Array /> */}
-
       {/* Stan komponentu - ćwiczenia */}
       {/* <StateExcercise1 />
       <StateExcercise1_V2 /> */}
       {/* <StateExcercise2 /> */}
-
       {/* useEffect */}
       {/* <Interval defaultValue={0} /> */}
       {/* <StateAndEffect /> */}
-
       {/* useEffect - ćwiczenia */}
       {/* <EffectExcercise2 /> */}
-
       {/* StrictMode */}
       {/* <StrictModeTest /> */}
-
       {/* Warunkowe renderowanie */}
       {/* <ConditionalRenderingIf /> */}
       {/* <ConditionalRenderingTernary isAccess /> */}
       {/* <DefaultName name='John' /> */}
       {/* <AndTest show={false} /> */}
-
       {/* Warunkowe renderowanie - ćwiczenia */}
       {/* <ConditionalExcercise1 /> */}
-      <ConditionalExercise2 />
+      {/* <ConditionalExercise2 />
       <ConditionalExercise2 user={{ name: "John" }} />
       <ConditionalExercise2 user={{ name: "John", lastname: "Doe" }} />
       <ConditionalExercise2 user={{ name: "John", lastname: "Doe", age: 10 }} />
-      <ConditionalExercise2 user={{ name: "John", lastname: "Doe", age: 30 }} />
+      <ConditionalExercise2 user={{ name: "John", lastname: "Doe", age: 30 }} /> */}
+      {/* Zadanie domowe - state/effect */}
+      {/* <HW1StateEffect /> */}
+      {/* <HW2StateEffect /> */}
+      {/* <HW3StateEffect /> */}
+      {/* Własne hooki */}
+      {/* <ComponentWithOwnHook /> */}
+      {/* Ćwiczenia - własne hooki */}
+      {/* <Ex1OwnHooks /> */}
+      {/* <Ex2OwnHooks /> */}
+      {/* <Ex3OwnHooks /> */}
+      {/* <ComponentForms /> */}
+      {/* Ćwiczenia - formularze */}
+      {/* <Ex1Forms /> */}
+      {/* <Ex2Forms /> */}
+
+      {/* Routing */}
+      {/* <Routing /> */}
+      <RoutingLayout />
     </>
   );
 };
