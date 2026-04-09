@@ -10,6 +10,7 @@ import { ConditionalRenderingIf } from "./components/ConditionalRendering/Condit
 import { ConditionalRenderingTernary } from "./components/ConditionalRendering/ConditionalRenderingTernary";
 import { DefaultName } from "./components/ConditionalRendering/DefaultName";
 import { DynamicStylesComponent } from "./components/DynamicStylesComponent/DynamicStylesComponent";
+import { Ex1Api } from "./components/exercises/api/Ex1Api";
 import { Ex1Attributes } from "./components/exercises/attributes/Ex1Attributes";
 import { Ex2Attributes } from "./components/exercises/attributes/Ex2Attributes";
 import { Ex3Attributes } from "./components/exercises/attributes/Ex3Attributes";
@@ -147,7 +148,10 @@ export const App = () => {
       {/* <CallStack /> */}
       {/* <Promises /> */}
       {/* <Fetch /> */}
-      <JsonServer />
+      {/* <JsonServer /> */}
+
+      {/* komunikacja z API - ćwiczenie */}
+      <Ex1Api />
     </>
   );
 };
