@@ -3,9 +3,10 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { Main } from "./Main";
 import { Home } from "./Home";
-import { AboutLayout } from "./AboutLayout";
-import { AboutMe } from "./AboutMe";
-import { AboutCompany } from "./AboutCompany";
+import { Product } from "./Product";
+import { Payment } from "./Payment";
+import { AccessProtectedRoute } from "./AccessProtectedRoute";
+import { About } from "./About";
 
 export const RoutingLayout = () => {
   return (
@@ -14,10 +15,11 @@ export const RoutingLayout = () => {
       <Routes>
         <Route path="/" element={<Main />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<AboutLayout />}>
-            <Route path="me" element={<AboutMe />} />
-            <Route path="company" element={<AboutCompany />} />
+          <Route path="/about/*" element={<About />} />
+          <Route path="/product" element={<AccessProtectedRoute />}>
+            <Route path=":id" element={<Product />} />
           </Route>
+          <Route path="/payment" element={<Payment />} />
         </Route>
       </Routes>
       <Footer />

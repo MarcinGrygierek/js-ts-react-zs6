@@ -1,15 +1,26 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 export const AboutLayout = () => {
   return (
     <div>
       <header>
         <ul>
+          {/* <li>
+            <a href="/about/me">About me</a>
+          </li> */}
           <li>
-            <Link to="/about/me">About me</Link>
+            <NavLink to="/about/me">About me</NavLink>
           </li>
           <li>
-            <Link to="/about/company">About company</Link>
+            <NavLink
+              to="/about/company"
+              className={({ isActive }) => `${isActive ? "active-link" : ""}`}
+              style={({ isActive }) => ({
+                fontWeight: isActive ? 700 : 300,
+              })}
+            >
+              About company
+            </NavLink>
           </li>
         </ul>
       </header>
