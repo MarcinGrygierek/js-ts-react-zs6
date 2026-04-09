@@ -1,3 +1,4 @@
+import { CallStack } from "./components/CallStack/CallStack";
 import { ComponentComposition } from "./components/ComponentComposition/ComponentComposition";
 import { ComponentForms } from "./components/ComponentForms/ComponentForms";
 import { ComponentReturns } from "./components/ComponentReturns";
@@ -27,19 +28,24 @@ import { Ex2Lists } from "./components/exercises/lists-and-keys/Ex2Lists";
 import { Ex1OwnHooks } from "./components/exercises/own-hooks/Ex1OwnHooks/Ex1OwnHooks";
 import { Ex2OwnHooks } from "./components/exercises/own-hooks/Ex2OwnHooks/Ex2OwnHooks";
 import { Ex3OwnHooks } from "./components/exercises/own-hooks/Ex3OwnHooks/Ex3OwnHooks";
+import { Ex1Routing } from "./components/exercises/routing/Ex1Routing";
+import { Ex2Routing } from "./components/exercises/routing/Ex2Routing";
 import { Interval } from "./components/exercises/state/Interval";
 import { StateAndEffect } from "./components/exercises/state/StateAndEffect";
 import { StateExcercise1 } from "./components/exercises/state/StateExcercise1";
 import { StateExcercise1_V2 } from "./components/exercises/state/StateExercise1_V2";
 import { StateExcercise2 } from "./components/exercises/state/StateExercise2";
 import { ExpressionAsCont } from "./components/ExpressionAsConst";
+import { Fetch } from "./components/Fetch/Fetch";
 import { FunctionsAsPropsParent } from "./components/FunctionsAsProps/FunctionsAsPropsParent";
 import { Hello } from "./components/Hello";
 import { HW1StateEffect } from "./components/homework/HW1StateEffect";
 import { HW2StateEffect } from "./components/homework/HW2StateEffect";
 import { HW3StateEffect } from "./components/homework/HW3StateEffect";
+import { JsonServer } from "./components/JsonServer/JsonServer";
 import { NestingArrayElement } from "./components/NestingArrayElements";
 import { NestingElement } from "./components/NestingElements";
+import { Promises } from "./components/Promises/Promises";
 import { PropsDrilling } from "./components/PropsDrilling/PropsDrilling";
 import { Routing } from "./components/Routing/Routing";
 import { RoutingLayout } from "./components/RoutingLayout/RoutingLayout";
@@ -132,7 +138,16 @@ export const App = () => {
 
       {/* Routing */}
       {/* <Routing /> */}
-      <RoutingLayout />
+      {/* <RoutingLayout /> */}
+
+      {/* ćwiczenia - Routing */}
+      {/* <Ex1Routing /> */}
+      {/* <Ex2Routing /> */}
+
+      {/* <CallStack /> */}
+      {/* <Promises /> */}
+      {/* <Fetch /> */}
+      <JsonServer />
     </>
   );
 };

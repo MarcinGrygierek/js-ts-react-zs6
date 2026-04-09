@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Low Red Moon",
+      "author": "Mike Chen"
+    },
+    {
+      "id": "2",
+      "title": "Horus Rising",
+      "author": "Dan Abnett"
+    },
+    {
+      "title": "Dolor sit",
+      "author": "Lorem ipsum",
+      "id": "MbH700RcBLQ"
+    },
+    {
+      "id": "kePVQBCld08"
+    },
+    {
+      "a": "asd",
+      "b": "asdasd",
+      "id": "QNNBpisY0l8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
