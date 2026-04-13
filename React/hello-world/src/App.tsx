@@ -14,6 +14,7 @@ import { Ex1Api } from "./components/exercises/api/Ex1Api";
 import { Ex1Attributes } from "./components/exercises/attributes/Ex1Attributes";
 import { Ex2Attributes } from "./components/exercises/attributes/Ex2Attributes";
 import { Ex3Attributes } from "./components/exercises/attributes/Ex3Attributes";
+import { Ex1CallbackMemo } from "./components/exercises/callback-memo/Ex1CallbackMemo";
 import { Ex1Components } from "./components/exercises/components/Ex1Components";
 import { Ex2Components } from "./components/exercises/components/Ex2Components";
 import { ExComposition } from "./components/exercises/composition/ExComposition";
@@ -57,6 +58,7 @@ import { Array } from "./components/State/Array";
 import { State } from "./components/State/State";
 import { StrictModeTest } from "./components/StrictModeTest/StrictModeTest";
 import { StyledComponent } from "./components/StyledComponent/StyledComponent";
+import { BigApp } from "./components/UsersApp/BigApp";
 
 export const App = () => {
   return (
@@ -160,7 +162,11 @@ export const App = () => {
 
       {/* Nadmierne renderowanie */}
       {/* <ExtensiveRendering /> */}
-      <HeavyComponent />
+      {/* <HeavyComponent /> */}
+
+      {/* <Ex1CallbackMemo /> */}
+
+      <BigApp />
     </>
   );
 };
