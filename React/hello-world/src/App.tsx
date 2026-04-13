@@ -29,6 +29,7 @@ import { Ex2Lists } from "./components/exercises/lists-and-keys/Ex2Lists";
 import { Ex1OwnHooks } from "./components/exercises/own-hooks/Ex1OwnHooks/Ex1OwnHooks";
 import { Ex2OwnHooks } from "./components/exercises/own-hooks/Ex2OwnHooks/Ex2OwnHooks";
 import { Ex3OwnHooks } from "./components/exercises/own-hooks/Ex3OwnHooks/Ex3OwnHooks";
+import { PokeApi } from "./components/exercises/poke-api/PokeApi";
 import { Ex1Routing } from "./components/exercises/routing/Ex1Routing";
 import { Ex2Routing } from "./components/exercises/routing/Ex2Routing";
 import { Interval } from "./components/exercises/state/Interval";
@@ -37,8 +38,10 @@ import { StateExcercise1 } from "./components/exercises/state/StateExcercise1";
 import { StateExcercise1_V2 } from "./components/exercises/state/StateExercise1_V2";
 import { StateExcercise2 } from "./components/exercises/state/StateExercise2";
 import { ExpressionAsCont } from "./components/ExpressionAsConst";
+import { ExtensiveRendering } from "./components/ExtensiveRendering/ExtensiveRendering";
 import { Fetch } from "./components/Fetch/Fetch";
 import { FunctionsAsPropsParent } from "./components/FunctionsAsProps/FunctionsAsPropsParent";
+import { HeavyComponent } from "./components/HeavyComponent/HeavyComponent";
 import { Hello } from "./components/Hello";
 import { HW1StateEffect } from "./components/homework/HW1StateEffect";
 import { HW2StateEffect } from "./components/homework/HW2StateEffect";
@@ -152,7 +155,12 @@ export const App = () => {
 
       {/* komunikacja z API - ćwiczenie */}
       {/* @TODO - rozwinąć: podział na komponenty, edycja */}
-      <Ex1Api />
+      {/* <Ex1Api /> */}
+      {/* <PokeApi /> */}
+
+      {/* Nadmierne renderowanie */}
+      {/* <ExtensiveRendering /> */}
+      <HeavyComponent />
     </>
   );
 };
