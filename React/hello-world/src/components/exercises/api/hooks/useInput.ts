@@ -11,9 +11,14 @@ export const useInput = (defaultValue: string) => {
     setValue("");
   };
 
+  const reset = (value: string) => {
+    setValue(value);
+  }
+
   return {
     value,
     onChange,
-    clear
+    clear,
+    reset
   };
 };

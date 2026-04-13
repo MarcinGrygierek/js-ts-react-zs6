@@ -1,8 +1,20 @@
 {
   "todos": [
     {
-      "text": "ssdfsdfsdf",
-      "id": "sVlcvL0SeFo"
+      "text": "Lorem ipsum",
+      "id": "GqgOzREj3PU"
+    },
+    {
+      "text": "Lorem ipsum dolor",
+      "id": "SMe9x0V7Cu0"
+    },
+    {
+      "text": "Testestestset",
+      "id": "XPsVGSMcPy4"
+    },
+    {
+      "text": "Dolor sit amet",
+      "id": "WJp91hEphhc"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

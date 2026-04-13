@@ -151,6 +151,7 @@ export const App = () => {
       {/* <JsonServer /> */}
 
       {/* komunikacja z API - ćwiczenie */}
+      {/* @TODO - rozwinąć: podział na komponenty, edycja */}
       <Ex1Api />
     </>
   );

@@ -18,6 +18,23 @@ export const useApi = (apiUrl: string) => {
       setError("An error occurred");
     }
   };
+  
+  const apiGetOne = async <R>(entity: string, id: string) => {
+    setError("");
+    try {
+      const response = await fetch(`${apiUrl}/${entity}/${id}`);
+
+      if (!response.ok) {
+        setError("Can not process your request");
+        return;
+      }
+      const data = await response.json();
+
+      return data as R;
+    } catch (e) {
+      setError("An error occurred");
+    }
+  };
 
   const apiDelete = async <R>(entity: string, id: string) => {
     setError("");
@@ -59,10 +76,34 @@ export const useApi = (apiUrl: string) => {
     }
   };
 
+  const apiPatch = async <P, R>(entity: string, id: string, payload: P) => {
+    setError("");
+    try {
+      const response = await fetch(`${apiUrl}/${entity}/${id}`, {
+        method: "PATCH",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (!response.ok) {
+        setError("Can not process your request");
+        return;
+      }
+      const data = await response.json();
+
+      return data as R;
+    } catch (e) {
+      setError("An error occurred");
+    }
+  };
+
   return {
     apiDelete,
     apiGet,
+    apiGetOne,
     apiPost,
+    apiPatch,
     apiError,
   };
 };
