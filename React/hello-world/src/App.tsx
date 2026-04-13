@@ -20,6 +20,7 @@ import { Ex2Components } from "./components/exercises/components/Ex2Components";
 import { ExComposition } from "./components/exercises/composition/ExComposition";
 import { ConditionalExcercise1 } from "./components/exercises/conditional-rendering/ConditionalExcercise1";
 import { ConditionalExercise2 } from "./components/exercises/conditional-rendering/ConditionalExercise2";
+import { Ex1Context } from "./components/exercises/context/Ex1Context";
 import { EffectExcercise2 } from "./components/exercises/effect/EffectExcercise1";
 import { Ex1Events } from "./components/exercises/events/Ex1Events";
 import { Ex2Events } from "./components/exercises/events/Ex2Events";
@@ -166,7 +167,9 @@ export const App = () => {
 
       {/* <Ex1CallbackMemo /> */}
 
-      <BigApp />
+      {/* <BigApp /> */}
+
+      <Ex1Context />
     </>
   );
 };
